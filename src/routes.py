@@ -44,3 +44,10 @@ def company_search():
             abort(404)
 
     return render_template('portfolio/search.html', form=form)
+
+
+@app.route('/portfolio')
+def portfolio_detail():
+    """
+    """
+    return render_template('portfolio/portfolio.html')
